@@ -4,17 +4,20 @@ import Extraction from './components/2-4.Props/Extraction/Extraction';
 import ClassComponent from './components/2-5.State/ClassComponent';
 import FunctionalComponent from './components/2-5.State/FunctionalComponent';
 import ClassComponent2 from './components/2-6.LifeCycle/ClassComponent2';
+import Event from './components/2-7.Event/Event'
 
 function App() {
   return (
     <div className="App">
 
-  {/* <FunctionalComponent />
-      <ClassComponent /> */}
+    <Event />
+    
+    {/* <FunctionalComponent />
+      <ClassComponent />
       <ClassComponent2 />
-
-      {/* <Extraction />
+      <Extraction />
       <Composition /> */}
+
       
     </div>
   );
