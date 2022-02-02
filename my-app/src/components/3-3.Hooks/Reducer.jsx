@@ -10,7 +10,7 @@ export default function Reducer() {
         return initialState
 
       case 'increment':
-        return { count: state.count + 1}
+        return { count: state.count + 1, name: "timmy" }
 
       case 'decrement':
         return { count: state.count - 1}    
