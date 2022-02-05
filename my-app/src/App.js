@@ -1,5 +1,7 @@
 import './App.css';
-import Example from './components/3-11.Portal/Example';
+
+import Component from './components/3-14.PropTypes/Component';
+// import Example from './components/3-11.Portal/Example';
 // import Memo from './components/3-8.Memoization/Memo';
 // import Button from './components/3-7.HOC/Button';
 // import Input from './components/3-7.HOC/Input';
@@ -24,7 +26,9 @@ function App() {
   return (
     <div className="App">
 
-      <Example />
+      <Component />
+
+      {/* <Example /> */}
 
       {/* <Memo /> */}
 
