@@ -18,6 +18,30 @@ const Button = styled.button`
   }
 `
 
+const P = props => (
+  <p
+    css={{
+      margin: 0,
+      fontSize: 12,
+      lineHeight: '1.5',
+      fontFamily: 'Sans-Serif',
+      color: 'black'
+    }}
+    {...props} // <- props contains the `className` prop
+  />
+)
+
+const ArticleText = props => (
+  <P
+    css={{
+      fontSize: 14,
+      fontFamily: 'Georgia, serif',
+      color: 'darkgray'
+    }}
+    {...props} // <- props contains the `className` prop
+  />
+)
+
 export default function EmotionExample() {
   return (
     <>
@@ -36,6 +60,9 @@ export default function EmotionExample() {
   </div>
     
       <Button>Hello</Button>
+
+      <P>PPPPPP</P>
+      <ArticleText>Article</ArticleText>
     </>
   );
 }
