@@ -15,14 +15,18 @@ export default function ButtonExample() {
 
     <br />
     <br />
-
     <Button onClick={handleClick} disabled={ true }>
       Disabled
     </Button>
 
     <br />
     <br />
-
+    <Button onClick={ handleClick } modifier="quite">
+      Quite
+    </Button>
+    
+    <br />
+    <br />
     <Button onClick={ handleClick } modifier="quite">
       Quite
     </Button>
