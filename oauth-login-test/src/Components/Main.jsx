@@ -1,17 +1,15 @@
 import React from 'react'
 
-const Main = () => {
+export default function Main() {
   return (
     <div style={{
-        fontSize: '2rem',
-        display: 'flex',
-        justifyContent: 'center',
-        marginTop: '2rem',
-      }}
-    >
-      Main
-      </div>
+      fontSize: '2rem',
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '2rem',
+    }}
+  >
+    Main Page
+    </div>
   )
 }
-
-export default Main
