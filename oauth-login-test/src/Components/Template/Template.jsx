@@ -6,10 +6,10 @@ width: 512px;
 height: 600px;
 
 position: relative;
-background: lightgray;
-border: 2px solid black;
+background: white;
+border: 0.5px solid black;
 border-radius: 16px;
-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.84);
+box-shadow: 20px 22px 47px 12px rgba(0, 0, 0, 0.25);
 
 margin: 0 auto;
 
