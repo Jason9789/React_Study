@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Container = styled.div`
 display: center;
 flex-flow: column wrap;
-width: 100px;
+// width: 100px;
 margin-top: 50px;
 `
 
@@ -39,9 +39,10 @@ class GoogleButton extends Component {
       <Container>
         <GoogleLogin
           clientId={REACT_APP_GOOGLE_API_KEY}
-          buttonText="Google"
+          buttonText="구글로 로그인하기"
           onSuccess={this.responseGoogle}
           onFailure={this.responseFail}
+          // cookiePolicy={'single-host-origin'}
           />
       </Container>
     )
