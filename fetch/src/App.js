@@ -11,7 +11,7 @@ function App() {
       <br />
       <br />
       <br />
-      <Counter2 />
+      {/* <Counter2 /> */}
     </div>
   );
 }
