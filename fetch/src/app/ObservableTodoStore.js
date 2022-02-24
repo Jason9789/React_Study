@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { makeObservable, observable, computed, action, autorun } from 'mobx'
 
 class ObservableTodoStore {
@@ -35,6 +36,21 @@ class ObservableTodoStore {
       completed: false,
       assignee: null
     });
+  }
+
+  fetchData = function* () {
+    const fetchTodo = async() => {
+      const response = await axios.get('/todo')
+      return response.data.todo.task
+    }
+
+    try {
+      const todo = yield fetchTodo()
+      this.addTodo(todo)
+
+    } catch (error) {
+      console.log(`error: ${error}`)
+    }
   }
 }
 
