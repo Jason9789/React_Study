@@ -1,5 +1,7 @@
 import './App.css';
 import { RecoilRoot } from 'recoil'
+import FontButton from './components/RecoilExample/FontButton';
+import Text from './components/RecoilExample/Text';
 // import Counter2 from './components/Counter2';
 // import MobxExample from './components/MobxExample';
 // import TestMocking from './components/TestMocking';
@@ -22,7 +24,8 @@ function App() {
       {/* <TodoList store={ observableTodoStore }/> */}
 
       <RecoilRoot>
-        
+        <FontButton />
+        <Text />
       </RecoilRoot>
     </div>
   );
