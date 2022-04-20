@@ -53,6 +53,7 @@
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.7.0",
     "@types/react-router-dom": "^5.3.3",
+    "@types/react-slick": "^0.23.8",
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
