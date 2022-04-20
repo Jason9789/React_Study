@@ -1,0 +1,48 @@
+{
+	"parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+	"extends": [
+		"prettier",
+		"airbnb",
+		"airbnb/hooks",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended"
+	],
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "@types"]
+      },
+      "typescript": {} // 프로젝트 Root의 tsconfig.json을 찾는다.
+    }
+  },
+	"rules": {
+		"react/function-component-definition": [
+			2,
+			{
+				"namedComponents": "arrow-function",
+				"unnamedComponents": "arrow-function"
+			}
+		],
+		"react/jsx-filename-extension": [
+			"warn", {
+				"extensions": [
+					".tsx"
+				]
+				}
+			],
+
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"ts": "never",
+				"tsx": "never"
+			}
+		]
+	}
+}
