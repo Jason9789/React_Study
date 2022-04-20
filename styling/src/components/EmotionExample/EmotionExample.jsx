@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
 
 import React from 'react';
-import { css } from '@emotion/react'
-import styled from '@emotion/styled'
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
-const color = 'white'
+const color = 'white';
 
 const Button = styled.button`
   padding: 32px;
@@ -16,49 +16,49 @@ const Button = styled.button`
   &:hover {
     color: white;
   }
-`
+`;
 
-const P = props => (
+const P = (props) => (
   <p
     css={{
       margin: 0,
       fontSize: 12,
       lineHeight: '1.5',
       fontFamily: 'Sans-Serif',
-      color: 'black'
+      color: 'black',
     }}
     {...props} // <- props contains the `className` prop
   />
-)
+);
 
-const ArticleText = props => (
+const ArticleText = (props) => (
   <P
     css={{
       fontSize: 14,
       fontFamily: 'Georgia, serif',
-      color: 'darkgray'
+      color: 'darkgray',
     }}
     {...props} // <- props contains the `className` prop
   />
-)
+);
 
 export default function EmotionExample() {
   return (
     <>
-    <div
-    css={css`
-      padding: 32px;
-      background-color: hotpink;
-      font-size: 24px;
-      border-radius: 4px;
-      &:hover {
-        color: ${color};
-      }
-    `}
-    >
-    Hover to change color.
-  </div>
-    
+      <div
+        css={css`
+          padding: 32px;
+          background-color: hotpink;
+          font-size: 24px;
+          border-radius: 4px;
+          &:hover {
+            color: ${color};
+          }
+        `}
+      >
+        Hover to change color.
+      </div>
+
       <Button>Hello</Button>
 
       <P>PPPPPP</P>
