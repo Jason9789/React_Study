@@ -1,22 +1,19 @@
 import './App.css'
-import Counter from './components/Counter'
-import EventPractice from './components/EventPractice'
-import MyComponent from './components/MyComponent'
-import Say from './components/Say'
+import ValidationSample from './components/ValidationSample'
 
-function App() {
-  return (
-    <>
-      <MyComponent name="React" favoriteNumber={89}>
-        리액트
-      </MyComponent>
+import React, { Component } from 'react'
+import ScrollBox from './components/ScrollBox'
 
-      <Counter />
-      <Say />
-
-      <EventPractice />
-    </>
-  )
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <ValidationSample />
+        <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
+        <button onClick={() => this.scrollBox.scrollToBottom()}>
+          맨 밑으로
+        </button>
+      </div>
+    )
+  }
 }
-
-export default App
